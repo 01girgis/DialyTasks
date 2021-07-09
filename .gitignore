@@ -2,6 +2,6 @@
 AppDelegate.swift
 SceneDelegate.swift
 Info.plist
-/DailyTask.xcdatamodeld
-/Assets.xcassets
-/Base.lproj
+DailyTask.xcdatamodeld/
+Assets.xcassets/
+Base.lproj/
