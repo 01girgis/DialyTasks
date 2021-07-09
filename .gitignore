@@ -1,0 +1,7 @@
+.DS_Store
+AppDelegate.swift
+SceneDelegate.swift
+Info.plist
+/DailyTask.xcdatamodeld
+/Assets.xcassets
+/Base.lproj
