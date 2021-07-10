@@ -137,4 +137,30 @@ extension ViewController : UITableViewDataSource , UITableViewDelegate{
         //for debugging
         print("editting")
     }
+    
+    //swipe action for deleting
+        func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+            
+            //remove cell action
+            let remove  = UIContextualAction(style: .destructive, title: "Remove"){ (remove,view,completionHandler) in
+                let removeTask = self.dataLoad[indexPath.row]
+                self.content.delete(removeTask)
+                
+                //save Core Data
+                do{
+                    try self.content.save()
+                }
+                catch {
+                    print("delete error")
+                }
+                
+                //update data
+                self.fetchTask()
+               
+                //debug
+                print("removed")
+                
+            }
+            return UISwipeActionsConfiguration(actions: [remove])
+        }
 }
