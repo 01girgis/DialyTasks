@@ -16,9 +16,14 @@ extension ViewController{
             //catch alert input data for creation entity
             let alertText = alert.textFields![0]
             
-            let newTask = Tasks(context: self.content)
-            newTask.taskText = alertText.text
-            
+            //check if enter an empty task content
+            if(alertText.text != ""){
+                let newTask = Tasks(context: self.content)
+                newTask.taskText = alertText.text
+            }
+            else{
+                print("empty alert")
+            }
             
             //save data from alert box
             do{
