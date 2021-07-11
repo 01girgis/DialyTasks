@@ -25,6 +25,8 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
     //Change Color Buttton Operations
     @IBAction func colorBtn(_ sender:Any){
         let colorAlert = UIAlertController(title: " ", message: "\n\n\n\n\n\n", preferredStyle: .actionSheet)
+        
+        //Alert Height
         let alertH = NSLayoutConstraint(item:colorAlert.view!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 400)
         
         //pickerView Implementatioon inside alert
