@@ -25,14 +25,16 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
     //Change Color Buttton Operations
     @IBAction func colorBtn(_ sender:Any){
         let colorAlert = UIAlertController(title: " ", message: "\n\n\n\n\n\n", preferredStyle: .actionSheet)
+        let alertH = NSLayoutConstraint(item:colorAlert.view!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 400)
         
         //pickerView Implementatioon inside alert
-        let colorPicker = UIPickerView(frame: CGRect( x: 0, y: 0, width: 200, height: 300))
+        let colorPicker = UIPickerView(frame: CGRect( x: 0, y: 0, width: 0, height: 300))
         colorPicker.delegate = self
         colorPicker.dataSource =  self
         
         //alert SubViews adds
         colorAlert.view.addSubview(colorPicker)
+        colorAlert.view.addConstraint(alertH)
         
         //Control Actions
         let colorChange = UIAlertAction(title: "Change", style: .default ){ _ in }
@@ -42,6 +44,6 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
         colorAlert.addAction(cancel)
         
         //Alert Pop UP
-        self.present(colorAlert, animated: true ,completion: nil)
+        self.present(colorAlert, animated: true ,completion: {colorPicker.frame.size.width = colorAlert.view.frame.size.width})
     }
 }
