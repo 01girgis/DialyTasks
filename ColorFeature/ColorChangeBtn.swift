@@ -47,7 +47,10 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
         //alert SubViews adds
         colorAlert.view.addSubview(colorPicker)
         colorAlert.view.addConstraint(alertH)
-        
+        colorAlert.view.tintColor = .black
+        //Background C
+        colorAlert.printBackgroundColor(self.table.backgroundColor)
+       
         //Control Actions
         let colorChange = UIAlertAction(title: "Change", style: .default ){ _ in
             let colorSelected = colorOption[colorPicker.selectedRow(inComponent: 0)]
@@ -203,3 +206,4 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
         self.present(colorAlert, animated: true ,completion: {colorPicker.frame.size.width = colorAlert.view.frame.size.width})
     }
 }
+
