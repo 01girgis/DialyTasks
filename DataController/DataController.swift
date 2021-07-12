@@ -17,6 +17,7 @@ extension ViewController : UITableViewDataSource , UITableViewDelegate{
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath)
         
         cell.textLabel?.text  = self.dataLoad[indexPath.row].taskText
+        cell.backgroundColor = self.table.backgroundColor
         return cell
     }
     

@@ -58,6 +58,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
                 colorKey.putColor(.white, forKey: "myColor")
                 self.view.backgroundColor = .white
                 self.table.backgroundColor = .white
+                self.table.reloadData()
                 break
                 
             case "TRUE RED":
@@ -65,6 +66,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
                 colorKey.putColor(trueRed, forKey: "myColor")
                 self.view.backgroundColor = trueRed
                 self.table.backgroundColor = trueRed
+                self.table.reloadData()
                 break
                 
             case "MEDIUM CRIMSON":
@@ -72,6 +74,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
                 colorKey.putColor(mediumCrimson, forKey: "myColor")
                 self.view.backgroundColor = mediumCrimson
                 self.table.backgroundColor = mediumCrimson
+                self.table.reloadData()
                 break
                 
             case "WISTERIA PURPLE":
@@ -79,6 +82,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
                 colorKey.putColor(wisteriaPurple, forKey: "myColor")
                 self.view.backgroundColor = wisteriaPurple
                 self.table.backgroundColor = wisteriaPurple
+                self.table.reloadData()
                 break
                 
             case "SKY COLOR":
@@ -86,6 +90,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
                 colorKey.putColor(skyColor, forKey: "myColor")
                 self.view.backgroundColor = skyColor
                 self.table.backgroundColor = skyColor
+                self.table.reloadData()
                 break
                 
             case "ULTRAMARINE COLOR":
@@ -93,6 +98,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
                 colorKey.putColor(ultramarineColor, forKey: "myColor")
                 self.view.backgroundColor = ultramarineColor
                 self.table.backgroundColor = ultramarineColor
+                self.table.reloadData()
                 break
                 
             case "PICTON BLUE":
@@ -100,6 +106,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
                 colorKey.putColor(pitconBlue, forKey: "myColor")
                 self.view.backgroundColor = pitconBlue
                 self.table.backgroundColor = pitconBlue
+                self.table.reloadData()
                 break
                 
             case "INDIGO COLOR":
@@ -107,6 +114,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
                 colorKey.putColor(indigoColor, forKey: "myColor")
                 self.view.backgroundColor = indigoColor
                 self.table.backgroundColor = indigoColor
+                self.table.reloadData()
                 break
                 
             case "NAVY BLUE COLOR":
@@ -114,6 +122,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
                 colorKey.putColor(navyblueColor, forKey: "myColor")
                 self.view.backgroundColor = navyblueColor
                 self.table.backgroundColor = navyblueColor
+                self.table.reloadData()
                 break
                 
             case "LIGHT BLUE COLOR":
@@ -121,6 +130,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
                 colorKey.putColor(lightblueColor, forKey: "myColor")
                 self.view.backgroundColor = lightblueColor
                 self.table.backgroundColor = lightblueColor
+                self.table.reloadData()
                 break
                 
             case "GREEN BAMBOO":
@@ -128,6 +138,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
                 colorKey.putColor(greenBamboo, forKey: "myColor")
                 self.view.backgroundColor = greenBamboo
                 self.table.backgroundColor = greenBamboo
+                self.table.reloadData()
                 break
                 
             case "SISKIN SPROUT YELLOW":
@@ -135,6 +146,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
                 colorKey.putColor(siskinsproutYellow, forKey: "myColor")
                 self.view.backgroundColor = siskinsproutYellow
                 self.table.backgroundColor = siskinsproutYellow
+                self.table.reloadData()
                 break
                 
             case "JUNGLE GREEN":
@@ -142,6 +154,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
                 colorKey.putColor(jungleGreen, forKey: "myColor")
                 self.view.backgroundColor = jungleGreen
                 self.table.backgroundColor = jungleGreen
+                self.table.reloadData()
                 break
                 
             case "OCEAN GREEN":
@@ -149,6 +162,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
                 colorKey.putColor(oceanGreen, forKey: "myColor")
                 self.view.backgroundColor = oceanGreen
                 self.table.backgroundColor = oceanGreen
+                self.table.reloadData()
                 break
                 
             case "JAPANESE TRIANDRA GRASS":
@@ -156,6 +170,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
                 colorKey.putColor(japanesetrindraGrass, forKey: "myColor")
                 self.view.backgroundColor = japanesetrindraGrass
                 self.table.backgroundColor = japanesetrindraGrass
+                self.table.reloadData()
                 break
                 
             case "RIPE LEMON":
@@ -163,6 +178,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
                 colorKey.putColor(ripeLemon, forKey: "myColor")
                 self.view.backgroundColor = ripeLemon
                 self.table.backgroundColor = ripeLemon
+                self.table.reloadData()
                 break
                 
             case "CREAM CAN":
@@ -170,6 +186,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
                 colorKey.putColor(creamCan, forKey: "myColor")
                 self.view.backgroundColor = creamCan
                 self.table.backgroundColor = creamCan
+                self.table.reloadData()
                 break
                 
             default:
