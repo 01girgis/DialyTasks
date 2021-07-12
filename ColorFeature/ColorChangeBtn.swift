@@ -40,7 +40,7 @@ extension ViewController: UIPickerViewDelegate ,UIPickerViewDataSource{
         let alertH = NSLayoutConstraint(item:colorAlert.view!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 400)
         
         //pickerView Implementatioon inside alert
-        let colorPicker = UIPickerView(frame: CGRect( x: 0, y: 0, width: 0, height: 300))
+        let colorPicker = UIPickerView(frame: CGRect( x: 0, y: 0, width: 0, height: 250))
         colorPicker.delegate = self
         colorPicker.dataSource =  self
         
