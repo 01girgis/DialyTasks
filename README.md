@@ -2,15 +2,21 @@
 - Notes App Built on Core Data & UserDefaults with MVC Pattern.
 - Project completely written in Swift. 
 ## CRUD implementation.
-- create
-<img src="Samples/1.png"  width="200" height="400" />
-- edit 
+- Create
+<p align="center">
+<img src="Samples/1.png"  />
+</p>
 
-- remove
-photo 
-photo
-photo 
-photo 
+- Edit ,  Click On Cell
+<p align="center">
+<img src="Samples/2.png"  />
+</p>
+
+- Remove , Swipe Action
+<p align="center">
+<img src="Samples/3.png"  />
+</p>
+
 
 ## UserDefaults was extended by NSKeyedArchiver to convert  UIcolor to Data for Storing Color  for  TableView colors. 
 
